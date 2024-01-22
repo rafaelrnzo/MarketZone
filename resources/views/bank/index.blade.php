@@ -86,7 +86,7 @@
             </div>
         </div>
         <div class="">
-            <p class="text-2xl text-white font-semibold mt-4 mb-4 ">Top Up</p>
+            <p class="text-2xl text-white font-semibold mt-4 mb-4 ">Withdraw</p>
 
             <div class="relative overflow-x-auto">
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
