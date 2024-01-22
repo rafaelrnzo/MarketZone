@@ -73,7 +73,7 @@
             </div>
         </nav>
         <div class="h-screen">
-
+            
             @yield('content')
         </div>
     </div>
