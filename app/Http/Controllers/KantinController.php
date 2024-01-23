@@ -40,7 +40,7 @@ class KantinController extends Controller
             $imageThumbnail = $request->file('image')->move('images/', $request->file('image')->getClientOriginalName() . now()->format('dmYHis') . $request->file('image')->getClientOriginalExtension());
         }
 
-        $thumbnailPath = $imageThumbnail->getPathname();
+        // $thumbnailPath = $imageThumbnail->getPathname();
 
         $product = Product::create([
             "name" => $request->name,
@@ -48,7 +48,7 @@ class KantinController extends Controller
             "category_id" => $request->category,
             "price" => $request->harga,
             "description" => $request->deskripsi,
-            "thumbnail" => $thumbnailPath
+            "thumbnail" => $request->thumbnail
         ]);
         
         alert()->success('Success', 'Success Add New Product!');
